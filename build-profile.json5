@@ -1,0 +1,43 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\17884\\.ohos\\config\\default_LJFL-master_URKcGYQ1xzbN886I4oEkkUOIQz9QBpyUDjIqA4rr0rA=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B76589878D48DF8E8E3E28E9BDB266E3E099FB90CB6955845CBD9C4C17F45884C961F7CDE811428",
+          "profile": "C:\\Users\\17884\\.ohos\\config\\default_LJFL-master_URKcGYQ1xzbN886I4oEkkUOIQz9QBpyUDjIqA4rr0rA=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\17884\\.ohos\\config\\default_LJFL-master_URKcGYQ1xzbN886I4oEkkUOIQz9QBpyUDjIqA4rr0rA=.p12",
+          "storePassword": "0000001B52439BBDA4B07455368C0403F29BDD1024880B40A963815A4A8F5946B51B59F8FB2BD5329D2DB8"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": "6.0.2(22)",
+        "compatibleSdkVersion": "6.0.2(22)",
+        "runtimeOS": "HarmonyOS",
+        "targetSdkVersion": "6.0.2(22)"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "src": [
+    "pages/QiDong",
+    "pages/DengLu",
+    "pages/Zhu",
+    "pages/ZhuCe",
+    "pages/WenJuan",
+    "pages/Wy",
+    "pages/LiShi"
+  ]
+}

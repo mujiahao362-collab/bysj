@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "垃圾分类助手"
+    },
+    {
+      "name": "read_media_reason",
+      "value": "访问本地媒体文件用于垃圾识别功能"
+    },
+    {
+      "name": "read_media_usedScene",
+      "value": "用户上传图片进行垃圾识别时访问本地图片"
+    },
+    {
+      "name": "internet_reason",
+      "value": "联网获取垃圾识别结果"
+    },
+    {
+      "name": "internet_usedScene",
+      "value": "垃圾识别时访问互联网"
+    }
+  ]
+}

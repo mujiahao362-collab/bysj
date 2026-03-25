@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=gb2312">
+<head>
+<meta charset="gb2312">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>垃圾分类图像识别</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b7f5;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            margin-left: 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+
+  </head>
+  <body>
+   <header>
+        <div class="container">
+            <div id="branding">
+                <h1>垃圾分类图像识别</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">首页</a></li>
+                    <li id="uploadLi" class="current">图像识别</li>
+                    <li><a href="show_image">结果查询</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="showcase">
+        <div class="container">
+            
+            <form method="POST" enctype="multipart/form-data" action="/">
+                <input type="file" id="fileInput" name="uploaded-file" style="display:none;">
+<input type="submit" value="上载图像" id="submitButton" style="display:none;">
+<div id="result"></div>
+            </form>
+          
+        </div>
+    </section>
+
+    <script>
+
+	 var currentFile;
+        // 当LI被点击时，触发文件选择器
+        document.getElementById('uploadLi').addEventListener('click', function() {
+            document.getElementById('fileInput').click();
+        });
+
+
+
+
+
+
+
+         // 当文件被选择后，自动上传文件
+    document.getElementById('fileInput').addEventListener('change', function() {
+        var file = this.files[0];
+        if (file) {
+
+
+
+
+
+
+ var submitButton = document.getElementById('submitButton');
+                submitButton.click(); // 触发提交按钮的点击事件
+
+
+
+        
+        }
+    });
+    </script>
+    
+
+
+
+
+
+    <footer>
+        <p>版权所有 &copy; 2024 我的网站</p>
+    </footer>
+  </body>
+</html>
